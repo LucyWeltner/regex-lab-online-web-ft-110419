@@ -26,7 +26,7 @@ def valid_phone_number?(phone)
   if phone.match(/\d{3}+\s?+\d{3}+\s?+\d{4}/) 
     p "digits"
     if phone.match(/\w*/) == nil  
-      p "no words"
+      p "no letters"
       return true 
   else
     return false
