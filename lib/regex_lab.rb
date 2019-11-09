@@ -34,4 +34,7 @@ end
 p words_five_letters_long("I'm just testing this")
 p words_five_letters_long("Now there are words with five letters total")
 p starts_with_a_vowel?("cakes")
-p valid_phone_number["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+phone_array = ["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
+phone_array.each do |number|
+  p valid_phone_number(number)
+end
