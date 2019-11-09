@@ -28,6 +28,7 @@ def valid_phone_number?(phone)
     if phone.match(/\w*/) == nil  
       p "no letters"
       return true 
+    end
   else
     return false
   end
