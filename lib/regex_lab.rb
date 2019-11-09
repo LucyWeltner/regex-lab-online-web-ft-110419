@@ -24,6 +24,7 @@ end
 
 def valid_phone_number?(phone)
   if phone.match(/\d{10}/) && phone.match(/\w*/) == nil
+    p 
     return true 
   else
     return false
@@ -33,3 +34,4 @@ end
 p words_five_letters_long("I'm just testing this")
 p words_five_letters_long("Now there are words with five letters total")
 p starts_with_a_vowel?("cakes")
+p valid_phone_number["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
