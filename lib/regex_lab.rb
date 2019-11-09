@@ -25,3 +25,6 @@ end
 def valid_phone_number?(phone)
   return true  
 end
+
+p words_five_letters_long("I'm just testing this")
+p words_five_letters_long("Now there are words with five letters total")
