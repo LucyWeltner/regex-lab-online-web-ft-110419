@@ -1,7 +1,9 @@
 def starts_with_a_vowel?(word)
-  if word.match(/[aeiou]/) != nil
+  if word[0].match(/[aeiou]/) != nil
+    p word[0]
     return true
   else
+    p word[0]
     return false
   end
 end
@@ -28,3 +30,4 @@ end
 
 p words_five_letters_long("I'm just testing this")
 p words_five_letters_long("Now there are words with five letters total")
+p starts_with_a_vowel("snakes")
