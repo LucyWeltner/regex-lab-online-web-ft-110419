@@ -23,7 +23,11 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  return true  
+  if phone.match(/\d{10}/) && phone.match(/\w*/) == nil
+    return true 
+  else
+    return false
+  end
 end
 
 p words_five_letters_long("I'm just testing this")
